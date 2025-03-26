@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* index.css */
+
+/* Smaller Product Cards */
+.product-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 8px; /* Reduced padding */
+  height: auto;
+  max-width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust Product Image */
+.product-img {
+  width: 100%;
+  height: 150px; /* Reduced image height for smaller cards */
+  object-fit: cover;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+/* Product Card Body - Smaller Padding and Font Sizes */
+.product-card-body {
+  padding: 10px;
+}
+
+.product-name {
+  font-size: 0.9rem; /* Smaller font size */
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.product-rating {
+  font-size: 0.8rem; /* Smaller rating font size */
+  color: #f39c12;
+  margin-top: 5px;
+}
+
+/* Product Price and Discount */
+.product-price {
+  font-size: 0.9rem; /* Smaller font size for price */
+  margin-top: 5px;
+}
+
+.product-stock {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.product-seller {
+  font-size: 0.85rem; /* Smaller font for seller */
+  margin-top: 5px;
+}
+
+.seller-badge {
+  background-color: #f1c40f;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.verified-badge {
+  background-color: green;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+/* Button styles */
+.wishlist-btn {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 0.85rem;
+  padding: 8px;
+}
+
+.view-btn {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  padding: 8px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
