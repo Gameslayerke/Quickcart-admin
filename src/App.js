@@ -19,6 +19,10 @@ function App() {
           <Routes>
             {/* Public Routes */}
             <Route element={<PublicLayout />}>
+<<<<<<< HEAD
+=======
+              <Route path="/" element={<AdminLogin />} /> {/* ✅ Default route now points to login */}
+>>>>>>> 575d01a (Initial commit for QuickCartAdmin)
               <Route path="/login" element={<AdminLogin />} />
               <Route path="/notfound" element={<UnderDevelopment />} />
             </Route>
@@ -30,7 +34,10 @@ function App() {
               <Route path="/carousel" element={<Carousel />} />
             </Route>
 
+<<<<<<< HEAD
             {/* Fallback Route */}
+=======
+>>>>>>> 575d01a (Initial commit for QuickCartAdmin)
             <Route path="*" element={<UnderDevelopment />} />
           </Routes>
         </div>
@@ -39,4 +46,8 @@ function App() {
   );
 }
 
+<<<<<<< HEAD
 export default App;
+=======
+export default App;
+>>>>>>> 575d01a (Initial commit for QuickCartAdmin)
